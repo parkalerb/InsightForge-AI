@@ -93,6 +93,66 @@ Detailed project specification documents are available in the `docs/` directory:
 
 ---
 
-## 🚀 Quick Start (Documentation Phase)
+## 🚀 Quick Start (Sprint 1 — Day 2 Backend Foundation)
 
-Currently, the project is in the **initial documentation and planning phase**. Application code, agent implementations, and RAG pipelines will be added sequentially following the [Project Roadmap](docs/roadmap.md).
+### 1. Environment Setup
+
+Create and activate a Python virtual environment:
+
+```bash
+# Create virtual environment
+python -m venv .venv
+
+# Activate on Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# Activate on Linux / macOS
+source .venv/bin/activate
+```
+
+### 2. Install Dependencies
+
+Copy the example environment file and install required dependencies:
+
+```bash
+# Copy example environment variables
+cp .env.example .env
+
+# Install backend dependencies
+pip install -r requirements.txt
+```
+
+### 3. Run FastAPI Backend Application
+
+Start the local Uvicorn development server:
+
+```bash
+uvicorn app.main:app --reload
+```
+
+The API will be available at `http://127.0.0.1:8000`.
+
+### 4. Verify Health Endpoint
+
+Access the health check endpoint:
+
+```bash
+curl http://127.0.0.1:8000/health
+```
+
+Expected JSON response:
+```json
+{
+  "status": "ok",
+  "app_name": "InsightForge AI",
+  "environment": "development"
+}
+```
+
+### 5. Run Test Suite
+
+Execute tests using `pytest`:
+
+```bash
+pytest
+```
