@@ -5,6 +5,7 @@ from typing import Any, Dict
 from fastapi import FastAPI, Request, status
 from fastapi.responses import JSONResponse
 
+from app.api.documents import router as documents_router
 from app.config import get_settings
 from app.logging_config import setup_logging
 
@@ -26,6 +27,8 @@ app = FastAPI(
     debug=settings.DEBUG,
     lifespan=lifespan,
 )
+
+app.include_router(documents_router)
 
 
 @app.exception_handler(Exception)

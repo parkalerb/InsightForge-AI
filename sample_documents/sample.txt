@@ -1,0 +1,13 @@
+InsightForge AI Sample Strategic Document
+
+Market Research & Strategy Analysis:
+This sample document provides context for evaluating internal document ingestion capabilities.
+Strategic research requires piecing together internal proprietary documentation with market data.
+
+Key Financial Highlights:
+- Annual Recurring Revenue (ARR): $12.5M
+- Target Growth Rate: 35% Year-over-Year
+- Primary Expansion Sector: Enterprise SaaS and Cloud Infrastructure
+
+Compliance and Security Notes:
+All internal AI research workflows must maintain strict source attribution and verifiable citations.
